@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author salah
+ *
+ */
+module iostreamdemo {
+}
