@@ -1,0 +1,27 @@
+package demo.bytestream.data;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+
+public class RainfallDataCreator3 {
+    public static void main(String[] args) {
+        try (Writer writer = new FileWriter("rainfall_data.txt")) {
+            // Write the data to the file using the Writer
+            writer.write("Station: Simpang Ampat\n");
+            writer.write("District: Alor Gajah\n");
+            writer.write("Rainfall Data:\n");
+            writer.write("Day 1: 5\n");
+            writer.write("Day 2: 10\n");
+            writer.write("Day 3: 8\n");
+            writer.write("Day 4: 12\n");
+            writer.write("Day 5: 6\n");
+            writer.write("Day 6: 9\n");
+            writer.write("Data creation completed.");
+
+            System.out.println("Data creation completed.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
